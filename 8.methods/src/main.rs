@@ -16,7 +16,7 @@ impl User {
         let mut secure_password: String = String::new();
 
         for _i in password.into_bytes().iter() {
-            secure_password.push('*')
+            secure_password.push('*');
         }
 
         let user: User = Self {username, password: secure_password};
